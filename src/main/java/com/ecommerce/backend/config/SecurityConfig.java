@@ -27,7 +27,7 @@ public class SecurityConfig {
     public SecurityConfig(JwtAuthFilter jwtAuthFilter) {
         this.jwtAuthFilter = jwtAuthFilter;
     }
-    @Value("${app.frontend}")
+    @Value("${app.frontend.url}")
     private String frontendUrl;
     // ✅ Configuración de seguridad moderna
     @Bean
